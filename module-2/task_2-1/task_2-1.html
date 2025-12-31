@@ -7,7 +7,32 @@
 <body>
 <script>
   /* write your code below this line  🙂 */
+const MyfirstConst = 5;
+const Myfirstfloat = 12.5;
 
+const ValuePI = 3.14;
+let x = 10;
+const y = x * ValuePI;
+const z = x + y;
+const f = 9;
+
+
+let count = 1;
+const max = 10;
+
+function printCount() {
+  document.write(count + "<br/>");
+  if (count === f) {
+  document.write("This is my favorit number: " + f + "<br/>");
+}
+  count++;
+  if (count > max) {
+    count = 1;
+    document.write("Counting again: <br/>");
+  }
+ }
+
+setInterval(printCount, 1000);
 </script>
 </body>
 </html>
