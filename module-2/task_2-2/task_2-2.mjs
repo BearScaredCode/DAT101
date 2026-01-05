@@ -76,21 +76,52 @@ printOut(newLine);
 
 printOut("--- Part 7 ----------------------------------------------------------------------------------------------");
 /* Put your code below here!*/
-printOut("Replace this with you answer!");
+const Point1 = 5 >= 3;
+const Point2 = 7 >= 7;
+const Point3 = "a" >= "b";
+const Point4 = "2500" <= "abcd";
+const Point5 = "arne" !== "thomas";
+const Point6 = 2 == 5;
+const Point7 = "abcd" > "bcd";
+
+printOut("Point1 (5 >= 3): " + "= " + Point1);
+printOut("Point2 (7 >= 7): " + "= " + Point2);
+printOut("Point3 ('a' >= 'b'): " + "= " + Point3);
+printOut("Point4 ('2500' <= 'abcd'): " + "= " + Point4);
+printOut("Point5 ('arne' !== 'thomas'): " + "= " + Point5);
+printOut("Point6 (2 == 5): " + "= " + Point6);
+printOut("Point7 ('abcd' > 'bcd'): " + "= " + Point7);
 printOut(newLine);
 
 printOut("--- Part 8 ----------------------------------------------------------------------------------------------");
 /* Put your code below here!*/
-printOut("Replace this with you answer!");
+const Num1 = "254";
+const Num2 = "57.23";
+const Num3 = "25 kroner";
+
+const num1Int = parseInt(Num1, 10);
+const num2Float = parseFloat(Num2);
+const num3Float = parseFloat(Num3); // parseFloat stops when non-number text appears
+
+printOut("Num1 as integer: " + num1Int);
+printOut("Num2 as float: " + num2Float);
+printOut("Num3 parsed from text: " + num3Float);
 printOut(newLine);
 
 printOut("--- Part 9 ----------------------------------------------------------------------------------------------");
 /* Put your code below here!*/
-printOut("Replace this with you answer!");
+let r = Math.floor(Math.random() * 360) + 1;
+
+printOut(r);
 printOut(newLine);
 
 /* Task 10*/
 printOut("--- Part 10 ---------------------------------------------------------------------------------------------");
 /* Put your code below here!*/
-printOut("Replace this with you answer!");
+const Task8days = 131;
+const weeks = Math.floor(Task8days / 7);
+const remainingDays = Task8days % 7;
+
+printOut(Task8days + " days is: " + weeks + " weeks and " + remainingDays + " days.");
+printOut(newLine);
 printOut(newLine);
