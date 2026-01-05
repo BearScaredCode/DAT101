@@ -51,36 +51,92 @@ printOut(newLine);
 
 printOut("--- Part 4 ----------------------------------------------------------------------------------------------");
 /* Put your code below here!*/
-printOut("Replace this with you answer!");
+const Intrager =1;
+if (Intrager > 0) { 
+  printOut("The number is positive");
+}
+else if (Intrager < 0) {
+  printOut("The number is negative");
+}
+else {
+  printOut("The number is zero");
+}
 printOut(newLine);
 
 printOut("--- Part 5 ----------------------------------------------------------------------------------------------");
 /* Put your code below here!*/
-printOut("Replace this with you answer!");
+if (Intrager > 0) { 
+  printOut("The number is positive");
+}
+else if (Intrager < 0) {
+  printOut("The number is negative");
+}
+else {
+  printOut("The number is zero");
+}
 printOut(newLine);
 
 printOut("--- Part 6 ----------------------------------------------------------------------------------------------");
 /* Put your code below here!*/
-printOut("Replace this with you answer!");
+const RandomNumber = Math.floor(Math.random() * 8) + 1;
+if (RandomNumber <= 4 ) {printOut ("Thank you");}
+else {printOut ("Image is too small");}
 printOut(newLine);
 
 printOut("--- Part 7 ----------------------------------------------------------------------------------------------");
 /* Put your code below here!*/
-printOut("Replace this with you answer!");
+const RandomNumber2 = Math.floor(Math.random() * 8) + 1;
+if (RandomNumber2 >= 6 ) {printOut ("Image too large");}
+else if (RandomNumber2 >= 4) {printOut ("Thank you");}
+else {printOut ("Image is too small");}
 printOut(newLine);
 
 printOut("--- Part 8 ----------------------------------------------------------------------------------------------");
 /* Put your code below here!*/
-printOut("Replace this with you answer!");
+const monthList =["January", "February", "Mars", "April", "Mai",
+"Jun", "Juli", "August", "September", "October", "November", "December"];
+const noOfMonth = monthList.length;
+const monthName = monthList[Math.floor(Math.random() * noOfMonth)];
+
+if (monthName.toLowerCase().includes("r")) {
+  printOut("You need to take vitamin D");
+} else {
+  printOut("You do not need to take vitamin D");
+}
 printOut(newLine);
 
 printOut("--- Part 9 ----------------------------------------------------------------------------------------------");
 /* Put your code below here!*/
-printOut("Replace this with you answer!");
+const monthList2 =["January", "February", "Mars", "April", "Mai",
+"Jun", "Juli", "August", "September", "October", "November", "December"];
+const noOfMonth2 = monthList2.length;
+const monthName2 = monthList2[Math.floor(Math.random() * noOfMonth2)];
+const daysIn31Months = ["January", "Mars", "Mai", "Juli", "August", "October", "December"];
+const daysIn30Months = ["April", "Jun", "September", "November"];
+if (daysIn31Months.includes(monthName2)) {
+  printOut(monthName2 + " has 31 days");
+} else if (daysIn30Months.includes(monthName2)) {
+  printOut(monthName2 + " has 30 days");
+} else {
+  printOut(monthName2 + " has 28 days");
+}
 printOut(newLine);
 
 /* Task 10*/
 printOut("--- Part 10 ---------------------------------------------------------------------------------------------");
 /* Put your code below here!*/
-printOut("Replace this with you answer!");
+const monthList3 =["January", "February", "Mars", "April", "Mai",
+"Jun", "Juli", "August", "September", "October", "November", "December"];
+const noOfMonth3 = monthList3.length;
+const monthName3 = monthList3[Math.floor(Math.random() * noOfMonth3)];
+
+const cloesdMonths = ["Mai", "Mars"];
+const semiClosedMonths = ["April"];
+if (cloesdMonths.includes(monthName3)) {
+  printOut(monthName3 + " is closed");
+} else if (semiClosedMonths.includes(monthName3)) {
+  printOut(monthName3 + " temporary premises open in the building next door.");
+} else {
+  printOut(monthName3 + " is open");
+}
 printOut(newLine);
