@@ -13,20 +13,21 @@
         user-select: none; /* Standard syntax */
       }
     </style>
+    <!-- Import map: map the bare specifier "three" to the local module build. -->
+    <script type="importmap">
+      {
+        "imports": {
+          "libSprite": "../../common/script/libSprite.mjs",
+          "lib2d": "../../common/script/lib2d.mjs"
+        }
+      }
+    </script>
   </head>
   <body class="prevent-select">
-    <canvas id="cvs" style="background-color: rgb(215, 250, 218)" width="1024" height="512"></canvas>
-  
+    <canvas id="cvs" style="background-color: antiquewhite" width="1024" height="512"></canvas>
   </body>
   <script defer>
     const cvs = document.getElementById("cvs");
     const ctx = cvs.getContext("2d");
-    ctx.beginPath();
-    ctx.moveTo(50, 100);
-    ctx.lineTo(250, 100);
-    ctx.lineTo(250, 300);
-    ctx.closePath();
-    ctx.fill();
-    ctx.stroke();
   </script>
 </html>
