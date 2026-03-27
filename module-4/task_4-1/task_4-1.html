@@ -10,8 +10,17 @@
       <span id="txtOut" style="white-space: nowrap"></span>
     </div>
     <ol>
-      <li>[Write the question here, and copy this for more questions]</li>
-      <p>[Write your answer here, and copy this for more answers]</p>
+      <li>Why is object-oriented development so important in programming?</li>
+      <p>Object-oriented development helps us organize code into reusable parts (classes/objects). It makes bigger programs easier to understand, maintain, and expand over time.</p>
+
+      <li>In Task 1, we create a static object called "AccountType." Explain what this object is used for and how this type of object can help us in software development.</li>
+      <p><code>AccountType</code> stores fixed account categories in one place (for example Normal, Saving, Pension). This avoids magic strings, reduces typing mistakes, and makes code more consistent.</p>
+
+      <li>Discuss why we use encapsulation in classes. Why do we want to "hide" code within our class? Explain how we can create "private" and "public" members in a constructor function.</li>
+      <p>Encapsulation protects internal data so objects cannot be changed in unsafe ways. In modern JS classes, private members use <code>#name</code>, while public members are normal methods/properties. In constructor-function style, we can use closure variables for private data and attach public members with <code>this.method = ...</code>.</p>
+
+      <li>Explain what happens when we use the "new" command in JavaScript.</li>
+      <p><code>new</code> creates a new object instance, links it to the constructor/class prototype, runs the constructor, and returns the new object.</p>
     </ol>
     <script type="module" src="./task_4-1.mjs" defer></script>
   </body>

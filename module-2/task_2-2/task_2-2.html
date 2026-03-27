@@ -12,31 +12,31 @@
     <ol>
       <li>Where should you use constants, and where should you use variables? Can they all be constants?</li>
       <p>
-				[Replace this with you answer]
+        I use constants for values that stay the same, and variables for values that need to change while the program runs. So no, everything cannot be constants.
 			</p>
       <li>How do parentheses affect the arithmetic outcome of an expression?</li>
       <p>
-				[Replace this with you answer]
+        Parentheses decide what gets calculated first. That can change the final answer a lot.
 			</p>
       <li>How do we limit floating-point numbers to a given number of decimals?</li>
       <p>
-				[Replace this with you answer]
+        We can use <code>toFixed(n)</code>, like <code>toFixed(2)</code> for two decimals. Another way is rounding with <code>Math.round</code>.
 			</p>
       <li>How can we compare two floating-point values to see if they are equal (is 12.199999 the same as 12.2)?</li>
       <p>
-				[Replace this with you answer]
+        Usually we should not compare floats with <code>===</code>. We compare the difference, for example <code>Math.abs(a - b) &lt; 0.000001</code>.
 			</p>
       <li>What do comparison operators return, and how can we check if they are FALSE or TRUE?</li>
       <p>
-				[Replace this with you answer]
+        They return boolean values: <code>true</code> or <code>false</code>. We usually check this with an <code>if</code> statement.
 			</p>
       <li>How does the Math.random() function work, and what can it be used for?</li>
       <p>
-				[Replace this with you answer]
+        <code>Math.random()</code> gives a random decimal number from 0 up to (but not including) 1. We use it for random numbers in games, tests, and choosing random items.
 			</p>
       <li>What is modulus (%), and when do we need this operator in mathematical operations?</li>
       <p>
-				[Replace this with you answer]
+        Modulus (<code>%</code>) gives the remainder after division. It is useful for checking even/odd numbers and repeating patterns.
 			</p>
     </ol>
 		<script type="module" src="./task_2-2.mjs" defer></script>

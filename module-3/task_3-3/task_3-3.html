@@ -10,8 +10,26 @@
       <span id="txtOut" style="white-space: nowrap"></span>
     </div>
     <ol>
-      <li>[Write the question here, and copy this for more questions]</li>
-      <p>[Write your answer here, and copy this for more answers]</p>
+      <li>What is the difference between invoking and creating a function?</li>
+      <p>Creating a function means defining it (writing what it should do). Invoking a function means calling it so the code actually runs.</p>
+
+      <li>Explain the syntax regarding semicolons and code blocks.</li>
+      <p>Code blocks use curly braces <code>{ }</code> to group statements. Semicolons <code>;</code> end statements; in JavaScript they are often optional, but it is safer and clearer to use them.</p>
+
+      <li>What happens when we try to store values from a function when it doesn't return any?</li>
+      <p>Then the stored value becomes <code>undefined</code>, because the function did not return anything.</p>
+
+      <li>How do we separate parameters from each other when creating a function?</li>
+      <p>We separate parameters with commas, for example: <code>function sum(a, b, c)</code>.</p>
+
+      <li>Explain how parameter names are related during the invocation and creation of a function.</li>
+      <p>When creating, parameter names are placeholders. During invocation, argument values are passed by position to those placeholders, so the order matters more than the names in the call.</p>
+
+      <li>Explain why a parameter is undefined when a function call is missing a parameter.</li>
+      <p>If an argument is not provided, JavaScript gives that parameter the default value <code>undefined</code> (unless we set our own default value in the function).</p>
+
+      <li>Explain what happens when we use recursive functions.</li>
+      <p>A recursive function calls itself repeatedly. It must have a base case to stop; otherwise it keeps calling itself until stack overflow (maximum call stack exceeded).</p>
     </ol>
     <script type="module" src="./task_3-3.mjs" defer></script>
   </body>
