@@ -4,7 +4,8 @@
     "target": "es6",
     "baseUrl": ".",
     "paths": {
-      "libSprite": ["common/script/libSprite.mjs"]
+      "libSprite": ["common/script/libSprite.mjs"],
+      "lib2d": ["common/script/lib2d.mjs"]
     }
   },
   "exclude": ["node_modules"]

@@ -143,24 +143,125 @@ printOut(newLine);
 
 printOut("--- Part 7 ----------------------------------------------------------------------------------------------");
 /* Put your code below here!*/
-Function CalculateSDT () {
-    const group
+function calculateSDT(speed, distance, time){
+    const speedMissing = speed === undefined || speed === null;
+    const distanceMissing = distance === undefined || distance === null;
+    const timeMissing = time === undefined || time === null;
+
+    const missingCount = Number(speedMissing) + Number(distanceMissing) + Number(timeMissing);
+    if(missingCount > 1){
+        return NaN;
+    }
+
+    if(speedMissing){
+        return distance / time;
+    }
+
+    if(timeMissing){
+        return distance / speed;
+    }
+
+    if(distanceMissing){
+        return speed * time;
+    }
+
+    return distance / time;
 }
-printOut("Replace this with you answer!");
+
+const speedInput = undefined;
+const distanceInput = 100;
+const timeInput = 2;
+printOut("Calculated value (missing speed): " + calculateSDT(speedInput, distanceInput, timeInput));
+
+const speedInput2 = 50;
+const distanceInput2 = 100;
+const timeInput2 = undefined;
+printOut("Calculated value (missing time): " + calculateSDT(speedInput2, distanceInput2, timeInput2));
+
+const speedInput3 = 50;
+const distanceInput3 = undefined;
+const timeInput3 = 2;
+printOut("Calculated value (missing distance): " + calculateSDT(speedInput3, distanceInput3, timeInput3));
+
+printOut("Calculated value (more than one missing): " + calculateSDT(undefined, undefined, 2));
 printOut(newLine);
 
 printOut("--- Part 8 ----------------------------------------------------------------------------------------------");
 /* Put your code below here!*/
-printOut("Replace this with you answer!");
+function expandText(text, maxSize, character, insertAfter){
+    let result = String(text);
+
+    if(result.length >= maxSize){
+        return result;
+    }
+
+    while(result.length < maxSize){
+        if(insertAfter){
+            result = result + character;
+        }
+        else{
+            result = character + result;
+        }
+    }
+
+    return result;
+}
+
+const expandedAfter = expandText("DAT", 8, " ", true);
+const expandedBefore = expandText("DAT", 8, " ", false);
+
+printOut("Insert after: " + expandedAfter);
+printOut("Insert before: " + expandedBefore);
 printOut(newLine);
 
 printOut("--- Part 9 ----------------------------------------------------------------------------------------------");
 /* Put your code below here!*/
-printOut("Replace this with you answer!");
+function sumConsecutive(start, count){
+    let sum = 0;
+    for(let i = 0; i < count; i++){
+        sum += start + i;
+    }
+    return sum;
+}
+
+function testMathExpression(lines){
+    for(let line = 1; line <= lines; line++){
+        const leftStart = line * line;
+        const leftCount = line + 1;
+        const rightStart = leftStart + leftCount;
+        const rightCount = line;
+
+        const leftSum = sumConsecutive(leftStart, leftCount);
+        const rightSum = sumConsecutive(rightStart, rightCount);
+
+        if(leftSum !== rightSum){
+            printOut("Line " + line + " failed: left=" + leftSum + ", right=" + rightSum);
+            return;
+        }
+    }
+
+    printOut("Maths fun!");
+}
+
+testMathExpression(200);
 printOut(newLine);
 
 /* Task 10*/
 printOut("--- Part 10 ---------------------------------------------------------------------------------------------");
 /* Put your code below here!*/
-printOut("Replace this with you answer!");
+function factorial(number){
+    if(number < 0){
+        return NaN;
+    }
+
+    if(number === 0 || number === 1){
+        return 1;
+    }
+
+    return number * factorial(number - 1);
+}
+
+const factorialInput = 6;
+const factorialResult = factorial(factorialInput);
+printOut("Factorial of " + factorialInput + " = " + factorialResult);
 printOut(newLine);
